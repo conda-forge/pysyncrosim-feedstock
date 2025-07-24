@@ -1,5 +1,5 @@
 {% set name = "pysyncrosim" %}
-{% set version = "2.1.2" %}
+{% set version = "2.1.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysyncrosim-{{ version }}.tar.gz
-  sha256: 7d3fff5d1ba8d333e85dd1b01fd552f8687a57d7a6ec68ae629cef089fca6940
+  sha256: f8a08fb83a625f7d5374e8c714460f7a4b5d0983728109208b52a7f3fd307393
 
 build:
   number: 0
