@@ -32,7 +32,6 @@ requirements:
 test:
   imports:
     - pysyncrosim
-    - tests
   commands:
     - pip check
   requires:
