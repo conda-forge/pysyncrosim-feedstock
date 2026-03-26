@@ -1,5 +1,5 @@
 {% set name = "pysyncrosim" %}
-{% set version = "2.1.3" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysyncrosim-{{ version }}.tar.gz
-  sha256: f8a08fb83a625f7d5374e8c714460f7a4b5d0983728109208b52a7f3fd307393
+  sha256: 75095d12c666c160a196a68d206b29f6f5b968d7680e488f421955fe944efab9
 
 build:
   number: 0
@@ -22,17 +22,14 @@ requirements:
     - setuptools
     - pandas
     - numpy
-    - rasterio
   run:
     - python >={{ python_min }}
     - pandas
     - numpy
-    - rasterio
 
 test:
   imports:
     - pysyncrosim
-    - tests
   commands:
     - pip check
   requires:
@@ -51,3 +48,5 @@ about:
 extra:
   recipe-maintainers:
     - katieb1
+    - spearmangillman
+    - vickimzhang
